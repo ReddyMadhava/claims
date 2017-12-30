@@ -1,0 +1,626 @@
+
+ ____    _____      _      ____    _____           _____   ____    _____ 
+/ ___|  |_   _|    / \    |  _ \  |_   _|         | ____| |___ \  | ____|
+\___ \    | |     / _ \   | |_) |   | |    _____  |  _|     __) | |  _|  
+ ___) |   | |    / ___ \  |  _ <    | |   |_____| | |___   / __/  | |___ 
+|____/    |_|   /_/   \_\ |_| \_\   |_|           |_____| |_____| |_____|
+
+Channel name : KaiserClsStlmt
+Creating channel...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:01:49.522 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:01:49.522 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:01:49.522 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:01:49.542 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.542 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:01:49.544 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:49.544 UTC [msp] GetLocalMSP -> DEBU 007[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.544 UTC [msp] GetDefaultSigningIdentity -> DEBU 008[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.544 UTC [msp] GetLocalMSP -> DEBU 009[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.544 UTC [msp] GetDefaultSigningIdentity -> DEBU 00a[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.544 UTC [msp/identity] Sign -> DEBU 00b[0m Sign: plaintext: 0A8C060A074F7267314D53501280062D...53616D706C65436F6E736F727469756D 
+[36m2017-12-17 11:01:49.544 UTC [msp/identity] Sign -> DEBU 00c[0m Sign: digest: 5C0C47CFD29361F87B7D5004498EDAA716DC769CC988C7888D3C6BC6E56C546A 
+[36m2017-12-17 11:01:49.544 UTC [msp] GetLocalMSP -> DEBU 00d[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.544 UTC [msp] GetDefaultSigningIdentity -> DEBU 00e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.544 UTC [msp] GetLocalMSP -> DEBU 00f[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.544 UTC [msp] GetDefaultSigningIdentity -> DEBU 010[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.545 UTC [msp/identity] Sign -> DEBU 011[0m Sign: plaintext: 0AC8060A1A08021A06089D9DD9D10522...260659FC88AAB883C7C492BEDFD8A702 
+[36m2017-12-17 11:01:49.545 UTC [msp/identity] Sign -> DEBU 012[0m Sign: digest: DAADC29385CF4315771C796205F21CD1C1D12696A48B99FE863735AFC3B10088 
+[36m2017-12-17 11:01:49.583 UTC [msp] GetLocalMSP -> DEBU 013[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.583 UTC [msp] GetDefaultSigningIdentity -> DEBU 014[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.583 UTC [msp] GetLocalMSP -> DEBU 015[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.583 UTC [msp] GetDefaultSigningIdentity -> DEBU 016[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.583 UTC [msp/identity] Sign -> DEBU 017[0m Sign: plaintext: 0AC8060A1A08021A06089D9DD9D10522...D2641CC41FE312080A021A0012021A00 
+[36m2017-12-17 11:01:49.583 UTC [msp/identity] Sign -> DEBU 018[0m Sign: digest: 626FECCEBA76AEDDE08D70DC9EE94F4BB8DD2593B32D2A7B6BC0589B52CA9875 
+[36m2017-12-17 11:01:49.584 UTC [channelCmd] readBlock -> DEBU 019[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:49.584 UTC [msp] GetLocalMSP -> DEBU 01a[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.584 UTC [msp] GetDefaultSigningIdentity -> DEBU 01b[0m Obtaining default signing identity
+2017-12-17 11:01:49.587 UTC [channelCmd] InitCmdFactory -> INFO 01c[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:49.787 UTC [msp] GetLocalMSP -> DEBU 01d[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.788 UTC [msp] GetDefaultSigningIdentity -> DEBU 01e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.788 UTC [msp] GetLocalMSP -> DEBU 01f[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.788 UTC [msp] GetDefaultSigningIdentity -> DEBU 020[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.788 UTC [msp/identity] Sign -> DEBU 021[0m Sign: plaintext: 0AC8060A1A08021A06089D9DD9D10522...B726B05C455E12080A021A0012021A00 
+[36m2017-12-17 11:01:49.788 UTC [msp/identity] Sign -> DEBU 022[0m Sign: digest: 159C3D1769053E076B0D53B2E119D52111D3860796AD2E8D06C2EEDC98085B98 
+[36m2017-12-17 11:01:49.789 UTC [channelCmd] readBlock -> DEBU 023[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:49.789 UTC [msp] GetLocalMSP -> DEBU 024[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.789 UTC [msp] GetDefaultSigningIdentity -> DEBU 025[0m Obtaining default signing identity
+2017-12-17 11:01:49.790 UTC [channelCmd] InitCmdFactory -> INFO 026[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:49.990 UTC [msp] GetLocalMSP -> DEBU 027[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.990 UTC [msp] GetDefaultSigningIdentity -> DEBU 028[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.990 UTC [msp] GetLocalMSP -> DEBU 029[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.990 UTC [msp] GetDefaultSigningIdentity -> DEBU 02a[0m Obtaining default signing identity
+[36m2017-12-17 11:01:49.990 UTC [msp/identity] Sign -> DEBU 02b[0m Sign: plaintext: 0AC8060A1A08021A06089D9DD9D10522...4FB00BA7703A12080A021A0012021A00 
+[36m2017-12-17 11:01:49.990 UTC [msp/identity] Sign -> DEBU 02c[0m Sign: digest: C111E9B4A2809C64AD68B5D776FE79CF105A8A5587BAE4D5FA683ACF7F8E4A94 
+[36m2017-12-17 11:01:49.991 UTC [channelCmd] readBlock -> DEBU 02d[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:49.991 UTC [msp] GetLocalMSP -> DEBU 02e[0m Returning existing local MSP
+[36m2017-12-17 11:01:49.991 UTC [msp] GetDefaultSigningIdentity -> DEBU 02f[0m Obtaining default signing identity
+2017-12-17 11:01:49.992 UTC [channelCmd] InitCmdFactory -> INFO 030[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:50.193 UTC [msp] GetLocalMSP -> DEBU 031[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.193 UTC [msp] GetDefaultSigningIdentity -> DEBU 032[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.193 UTC [msp] GetLocalMSP -> DEBU 033[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.193 UTC [msp] GetDefaultSigningIdentity -> DEBU 034[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.193 UTC [msp/identity] Sign -> DEBU 035[0m Sign: plaintext: 0AC8060A1A08021A06089E9DD9D10522...16C2A19167A312080A021A0012021A00 
+[36m2017-12-17 11:01:50.193 UTC [msp/identity] Sign -> DEBU 036[0m Sign: digest: 28859C9C6F6D12F91B1A4E00A2B7A5D7A58411A9D53F4336BD4B138BB86A3373 
+[36m2017-12-17 11:01:50.194 UTC [channelCmd] readBlock -> DEBU 037[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:50.194 UTC [msp] GetLocalMSP -> DEBU 038[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.194 UTC [msp] GetDefaultSigningIdentity -> DEBU 039[0m Obtaining default signing identity
+2017-12-17 11:01:50.195 UTC [channelCmd] InitCmdFactory -> INFO 03a[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:50.395 UTC [msp] GetLocalMSP -> DEBU 03b[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.395 UTC [msp] GetDefaultSigningIdentity -> DEBU 03c[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.395 UTC [msp] GetLocalMSP -> DEBU 03d[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.395 UTC [msp] GetDefaultSigningIdentity -> DEBU 03e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.396 UTC [msp/identity] Sign -> DEBU 03f[0m Sign: plaintext: 0AC8060A1A08021A06089E9DD9D10522...AF6C2AAAF48212080A021A0012021A00 
+[36m2017-12-17 11:01:50.396 UTC [msp/identity] Sign -> DEBU 040[0m Sign: digest: E94744AE5A16D4349FF46979947A77297369031518053B8DD857B7311088FECB 
+[36m2017-12-17 11:01:50.396 UTC [channelCmd] readBlock -> DEBU 041[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:50.396 UTC [msp] GetLocalMSP -> DEBU 042[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.396 UTC [msp] GetDefaultSigningIdentity -> DEBU 043[0m Obtaining default signing identity
+2017-12-17 11:01:50.400 UTC [channelCmd] InitCmdFactory -> INFO 044[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:50.600 UTC [msp] GetLocalMSP -> DEBU 045[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.600 UTC [msp] GetDefaultSigningIdentity -> DEBU 046[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.600 UTC [msp] GetLocalMSP -> DEBU 047[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.600 UTC [msp] GetDefaultSigningIdentity -> DEBU 048[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.600 UTC [msp/identity] Sign -> DEBU 049[0m Sign: plaintext: 0AC8060A1A08021A06089E9DD9D10522...D910F5C4EA0312080A021A0012021A00 
+[36m2017-12-17 11:01:50.600 UTC [msp/identity] Sign -> DEBU 04a[0m Sign: digest: CFE18E00BFB56038D5D026390DE4E1BE1FD84A649C85BC8E0B3E35B8648396E8 
+[36m2017-12-17 11:01:50.601 UTC [channelCmd] readBlock -> DEBU 04b[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:50.601 UTC [msp] GetLocalMSP -> DEBU 04c[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.601 UTC [msp] GetDefaultSigningIdentity -> DEBU 04d[0m Obtaining default signing identity
+2017-12-17 11:01:50.603 UTC [channelCmd] InitCmdFactory -> INFO 04e[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:50.803 UTC [msp] GetLocalMSP -> DEBU 04f[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.803 UTC [msp] GetDefaultSigningIdentity -> DEBU 050[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.803 UTC [msp] GetLocalMSP -> DEBU 051[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.803 UTC [msp] GetDefaultSigningIdentity -> DEBU 052[0m Obtaining default signing identity
+[36m2017-12-17 11:01:50.803 UTC [msp/identity] Sign -> DEBU 053[0m Sign: plaintext: 0AC8060A1A08021A06089E9DD9D10522...E6DA522D00D312080A021A0012021A00 
+[36m2017-12-17 11:01:50.803 UTC [msp/identity] Sign -> DEBU 054[0m Sign: digest: 821F6C741BD96C3E1289EB1ADA0480F107A6DA983AEAA5FB1115B804FE46C97B 
+[36m2017-12-17 11:01:50.804 UTC [channelCmd] readBlock -> DEBU 055[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:50.804 UTC [msp] GetLocalMSP -> DEBU 056[0m Returning existing local MSP
+[36m2017-12-17 11:01:50.804 UTC [msp] GetDefaultSigningIdentity -> DEBU 057[0m Obtaining default signing identity
+2017-12-17 11:01:50.805 UTC [channelCmd] InitCmdFactory -> INFO 058[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:51.005 UTC [msp] GetLocalMSP -> DEBU 059[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.005 UTC [msp] GetDefaultSigningIdentity -> DEBU 05a[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.005 UTC [msp] GetLocalMSP -> DEBU 05b[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.005 UTC [msp] GetDefaultSigningIdentity -> DEBU 05c[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.005 UTC [msp/identity] Sign -> DEBU 05d[0m Sign: plaintext: 0AC8060A1A08021A06089F9DD9D10522...878B9051F0BC12080A021A0012021A00 
+[36m2017-12-17 11:01:51.005 UTC [msp/identity] Sign -> DEBU 05e[0m Sign: digest: 4F112AFB48DDA181D39AE9A75D04BDDAD321956EB0D63AB0FAADAD608924E7CC 
+[36m2017-12-17 11:01:51.006 UTC [channelCmd] readBlock -> DEBU 05f[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:51.006 UTC [msp] GetLocalMSP -> DEBU 060[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.006 UTC [msp] GetDefaultSigningIdentity -> DEBU 061[0m Obtaining default signing identity
+2017-12-17 11:01:51.007 UTC [channelCmd] InitCmdFactory -> INFO 062[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:51.208 UTC [msp] GetLocalMSP -> DEBU 063[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.208 UTC [msp] GetDefaultSigningIdentity -> DEBU 064[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.208 UTC [msp] GetLocalMSP -> DEBU 065[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.208 UTC [msp] GetDefaultSigningIdentity -> DEBU 066[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.208 UTC [msp/identity] Sign -> DEBU 067[0m Sign: plaintext: 0AC8060A1A08021A06089F9DD9D10522...B3CAD33A0E4612080A021A0012021A00 
+[36m2017-12-17 11:01:51.208 UTC [msp/identity] Sign -> DEBU 068[0m Sign: digest: 45FA1585AA973AB790AEEF8BD0954D3A0BC19D58D6707E5937761AB107E7D00C 
+[36m2017-12-17 11:01:51.209 UTC [channelCmd] readBlock -> DEBU 069[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:51.209 UTC [msp] GetLocalMSP -> DEBU 06a[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.209 UTC [msp] GetDefaultSigningIdentity -> DEBU 06b[0m Obtaining default signing identity
+2017-12-17 11:01:51.211 UTC [channelCmd] InitCmdFactory -> INFO 06c[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:51.411 UTC [msp] GetLocalMSP -> DEBU 06d[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.411 UTC [msp] GetDefaultSigningIdentity -> DEBU 06e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.411 UTC [msp] GetLocalMSP -> DEBU 06f[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.411 UTC [msp] GetDefaultSigningIdentity -> DEBU 070[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.411 UTC [msp/identity] Sign -> DEBU 071[0m Sign: plaintext: 0AC8060A1A08021A06089F9DD9D10522...BB681574791C12080A021A0012021A00 
+[36m2017-12-17 11:01:51.411 UTC [msp/identity] Sign -> DEBU 072[0m Sign: digest: 6C4D6D3E2896BBC5663297E784A92942F86958A934759217218BE61C877B5CB0 
+[36m2017-12-17 11:01:51.412 UTC [channelCmd] readBlock -> DEBU 073[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:51.412 UTC [msp] GetLocalMSP -> DEBU 074[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.412 UTC [msp] GetDefaultSigningIdentity -> DEBU 075[0m Obtaining default signing identity
+2017-12-17 11:01:51.413 UTC [channelCmd] InitCmdFactory -> INFO 076[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:51.613 UTC [msp] GetLocalMSP -> DEBU 077[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.613 UTC [msp] GetDefaultSigningIdentity -> DEBU 078[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.613 UTC [msp] GetLocalMSP -> DEBU 079[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.613 UTC [msp] GetDefaultSigningIdentity -> DEBU 07a[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.613 UTC [msp/identity] Sign -> DEBU 07b[0m Sign: plaintext: 0AC8060A1A08021A06089F9DD9D10522...DB65D4F71E9412080A021A0012021A00 
+[36m2017-12-17 11:01:51.614 UTC [msp/identity] Sign -> DEBU 07c[0m Sign: digest: 36697C1C59BCCAD95D7A8F9513D4D68DAE1FD99C9D8CF7B678F10161A3617225 
+[36m2017-12-17 11:01:51.614 UTC [channelCmd] readBlock -> DEBU 07d[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:51.614 UTC [msp] GetLocalMSP -> DEBU 07e[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.614 UTC [msp] GetDefaultSigningIdentity -> DEBU 07f[0m Obtaining default signing identity
+2017-12-17 11:01:51.615 UTC [channelCmd] InitCmdFactory -> INFO 080[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:51.816 UTC [msp] GetLocalMSP -> DEBU 081[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.816 UTC [msp] GetDefaultSigningIdentity -> DEBU 082[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.816 UTC [msp] GetLocalMSP -> DEBU 083[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.816 UTC [msp] GetDefaultSigningIdentity -> DEBU 084[0m Obtaining default signing identity
+[36m2017-12-17 11:01:51.816 UTC [msp/identity] Sign -> DEBU 085[0m Sign: plaintext: 0AC8060A1A08021A06089F9DD9D10522...0F81E92EFB3712080A021A0012021A00 
+[36m2017-12-17 11:01:51.816 UTC [msp/identity] Sign -> DEBU 086[0m Sign: digest: B072AE27ABA2AE4EEC0B8CF72FCF208E929B6D79DA48B0C571167830E9E02658 
+[36m2017-12-17 11:01:51.817 UTC [channelCmd] readBlock -> DEBU 087[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:51.817 UTC [msp] GetLocalMSP -> DEBU 088[0m Returning existing local MSP
+[36m2017-12-17 11:01:51.817 UTC [msp] GetDefaultSigningIdentity -> DEBU 089[0m Obtaining default signing identity
+2017-12-17 11:01:51.818 UTC [channelCmd] InitCmdFactory -> INFO 08a[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:52.018 UTC [msp] GetLocalMSP -> DEBU 08b[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.019 UTC [msp] GetDefaultSigningIdentity -> DEBU 08c[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.019 UTC [msp] GetLocalMSP -> DEBU 08d[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.019 UTC [msp] GetDefaultSigningIdentity -> DEBU 08e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.019 UTC [msp/identity] Sign -> DEBU 08f[0m Sign: plaintext: 0AC8060A1A08021A0608A09DD9D10522...02D8233F015612080A021A0012021A00 
+[36m2017-12-17 11:01:52.019 UTC [msp/identity] Sign -> DEBU 090[0m Sign: digest: 20EA3B819C90E7B5F86EF1472C7432F409CCA3D17B87FD43007FCE3E1256CF02 
+[36m2017-12-17 11:01:52.020 UTC [channelCmd] readBlock -> DEBU 091[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:52.020 UTC [msp] GetLocalMSP -> DEBU 092[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.020 UTC [msp] GetDefaultSigningIdentity -> DEBU 093[0m Obtaining default signing identity
+2017-12-17 11:01:52.021 UTC [channelCmd] InitCmdFactory -> INFO 094[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:52.221 UTC [msp] GetLocalMSP -> DEBU 095[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.221 UTC [msp] GetDefaultSigningIdentity -> DEBU 096[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.222 UTC [msp] GetLocalMSP -> DEBU 097[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.222 UTC [msp] GetDefaultSigningIdentity -> DEBU 098[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.222 UTC [msp/identity] Sign -> DEBU 099[0m Sign: plaintext: 0AC8060A1A08021A0608A09DD9D10522...B93EB7CED99012080A021A0012021A00 
+[36m2017-12-17 11:01:52.222 UTC [msp/identity] Sign -> DEBU 09a[0m Sign: digest: 01FE30554EA8D17B0F7076EB7F1516467D70F00D7FAFF51C377F01A6168086BB 
+[36m2017-12-17 11:01:52.222 UTC [channelCmd] readBlock -> DEBU 09b[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:52.222 UTC [msp] GetLocalMSP -> DEBU 09c[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.222 UTC [msp] GetDefaultSigningIdentity -> DEBU 09d[0m Obtaining default signing identity
+2017-12-17 11:01:52.224 UTC [channelCmd] InitCmdFactory -> INFO 09e[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:52.424 UTC [msp] GetLocalMSP -> DEBU 09f[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.424 UTC [msp] GetDefaultSigningIdentity -> DEBU 0a0[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.424 UTC [msp] GetLocalMSP -> DEBU 0a1[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.424 UTC [msp] GetDefaultSigningIdentity -> DEBU 0a2[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.424 UTC [msp/identity] Sign -> DEBU 0a3[0m Sign: plaintext: 0AC8060A1A08021A0608A09DD9D10522...9B41C8CAE04312080A021A0012021A00 
+[36m2017-12-17 11:01:52.424 UTC [msp/identity] Sign -> DEBU 0a4[0m Sign: digest: 3939039BCAD9B401060FEF2D5E068DBC3765F01CBDBE929AED905A959D0B725B 
+[36m2017-12-17 11:01:52.425 UTC [channelCmd] readBlock -> DEBU 0a5[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:52.425 UTC [msp] GetLocalMSP -> DEBU 0a6[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.425 UTC [msp] GetDefaultSigningIdentity -> DEBU 0a7[0m Obtaining default signing identity
+2017-12-17 11:01:52.426 UTC [channelCmd] InitCmdFactory -> INFO 0a8[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:52.626 UTC [msp] GetLocalMSP -> DEBU 0a9[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.627 UTC [msp] GetDefaultSigningIdentity -> DEBU 0aa[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.627 UTC [msp] GetLocalMSP -> DEBU 0ab[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.627 UTC [msp] GetDefaultSigningIdentity -> DEBU 0ac[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.627 UTC [msp/identity] Sign -> DEBU 0ad[0m Sign: plaintext: 0AC8060A1A08021A0608A09DD9D10522...C0284BBA690812080A021A0012021A00 
+[36m2017-12-17 11:01:52.627 UTC [msp/identity] Sign -> DEBU 0ae[0m Sign: digest: 98E7BE60E0E95A39F4FFAA437E3629338DB180F57D8690D38677B169B18FD020 
+[36m2017-12-17 11:01:52.627 UTC [channelCmd] readBlock -> DEBU 0af[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:52.628 UTC [msp] GetLocalMSP -> DEBU 0b0[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.628 UTC [msp] GetDefaultSigningIdentity -> DEBU 0b1[0m Obtaining default signing identity
+2017-12-17 11:01:52.629 UTC [channelCmd] InitCmdFactory -> INFO 0b2[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:52.829 UTC [msp] GetLocalMSP -> DEBU 0b3[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.829 UTC [msp] GetDefaultSigningIdentity -> DEBU 0b4[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.830 UTC [msp] GetLocalMSP -> DEBU 0b5[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.830 UTC [msp] GetDefaultSigningIdentity -> DEBU 0b6[0m Obtaining default signing identity
+[36m2017-12-17 11:01:52.830 UTC [msp/identity] Sign -> DEBU 0b7[0m Sign: plaintext: 0AC8060A1A08021A0608A09DD9D10522...290A08382EBC12080A021A0012021A00 
+[36m2017-12-17 11:01:52.830 UTC [msp/identity] Sign -> DEBU 0b8[0m Sign: digest: 9125B08652199567AFCAD0D03EA61F5DAE8476F4749A65881E6F8241F9BBDF5E 
+[36m2017-12-17 11:01:52.830 UTC [channelCmd] readBlock -> DEBU 0b9[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:52.830 UTC [msp] GetLocalMSP -> DEBU 0ba[0m Returning existing local MSP
+[36m2017-12-17 11:01:52.830 UTC [msp] GetDefaultSigningIdentity -> DEBU 0bb[0m Obtaining default signing identity
+2017-12-17 11:01:52.832 UTC [channelCmd] InitCmdFactory -> INFO 0bc[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:53.032 UTC [msp] GetLocalMSP -> DEBU 0bd[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.032 UTC [msp] GetDefaultSigningIdentity -> DEBU 0be[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.032 UTC [msp] GetLocalMSP -> DEBU 0bf[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.032 UTC [msp] GetDefaultSigningIdentity -> DEBU 0c0[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.032 UTC [msp/identity] Sign -> DEBU 0c1[0m Sign: plaintext: 0AC8060A1A08021A0608A19DD9D10522...429A55F114B412080A021A0012021A00 
+[36m2017-12-17 11:01:53.032 UTC [msp/identity] Sign -> DEBU 0c2[0m Sign: digest: F1DED37FBAA16ABADE706ED01F0E7BA27012A2F5135FAB3CCD1D6AD9DF06D843 
+[36m2017-12-17 11:01:53.033 UTC [channelCmd] readBlock -> DEBU 0c3[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:53.033 UTC [msp] GetLocalMSP -> DEBU 0c4[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.033 UTC [msp] GetDefaultSigningIdentity -> DEBU 0c5[0m Obtaining default signing identity
+2017-12-17 11:01:53.034 UTC [channelCmd] InitCmdFactory -> INFO 0c6[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:53.234 UTC [msp] GetLocalMSP -> DEBU 0c7[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.234 UTC [msp] GetDefaultSigningIdentity -> DEBU 0c8[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.234 UTC [msp] GetLocalMSP -> DEBU 0c9[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.234 UTC [msp] GetDefaultSigningIdentity -> DEBU 0ca[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.234 UTC [msp/identity] Sign -> DEBU 0cb[0m Sign: plaintext: 0AC8060A1A08021A0608A19DD9D10522...584CE8CD112112080A021A0012021A00 
+[36m2017-12-17 11:01:53.234 UTC [msp/identity] Sign -> DEBU 0cc[0m Sign: digest: 05120BEC7AA0522321DFF89758DF9EACEFB877771B3F230369D3ACB69635E629 
+[36m2017-12-17 11:01:53.235 UTC [channelCmd] readBlock -> DEBU 0cd[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:53.235 UTC [msp] GetLocalMSP -> DEBU 0ce[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.235 UTC [msp] GetDefaultSigningIdentity -> DEBU 0cf[0m Obtaining default signing identity
+2017-12-17 11:01:53.237 UTC [channelCmd] InitCmdFactory -> INFO 0d0[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:53.437 UTC [msp] GetLocalMSP -> DEBU 0d1[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.437 UTC [msp] GetDefaultSigningIdentity -> DEBU 0d2[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.437 UTC [msp] GetLocalMSP -> DEBU 0d3[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.437 UTC [msp] GetDefaultSigningIdentity -> DEBU 0d4[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.437 UTC [msp/identity] Sign -> DEBU 0d5[0m Sign: plaintext: 0AC8060A1A08021A0608A19DD9D10522...F8827CB724B712080A021A0012021A00 
+[36m2017-12-17 11:01:53.437 UTC [msp/identity] Sign -> DEBU 0d6[0m Sign: digest: F78C9B5F512BABBC53E95E55C645B334C0A12AE88D089F55970F12E053EAC990 
+[36m2017-12-17 11:01:53.438 UTC [channelCmd] readBlock -> DEBU 0d7[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:53.438 UTC [msp] GetLocalMSP -> DEBU 0d8[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.438 UTC [msp] GetDefaultSigningIdentity -> DEBU 0d9[0m Obtaining default signing identity
+2017-12-17 11:01:53.439 UTC [channelCmd] InitCmdFactory -> INFO 0da[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:53.639 UTC [msp] GetLocalMSP -> DEBU 0db[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.640 UTC [msp] GetDefaultSigningIdentity -> DEBU 0dc[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.640 UTC [msp] GetLocalMSP -> DEBU 0dd[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.640 UTC [msp] GetDefaultSigningIdentity -> DEBU 0de[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.640 UTC [msp/identity] Sign -> DEBU 0df[0m Sign: plaintext: 0AC8060A1A08021A0608A19DD9D10522...13F115636CE912080A021A0012021A00 
+[36m2017-12-17 11:01:53.640 UTC [msp/identity] Sign -> DEBU 0e0[0m Sign: digest: D4166DA6B857A82552E4CE325C6D163BD77E93F64FE1B2EA04105528548BD4E7 
+[36m2017-12-17 11:01:53.640 UTC [channelCmd] readBlock -> DEBU 0e1[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:53.640 UTC [msp] GetLocalMSP -> DEBU 0e2[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.640 UTC [msp] GetDefaultSigningIdentity -> DEBU 0e3[0m Obtaining default signing identity
+2017-12-17 11:01:53.641 UTC [channelCmd] InitCmdFactory -> INFO 0e4[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:53.842 UTC [msp] GetLocalMSP -> DEBU 0e5[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.842 UTC [msp] GetDefaultSigningIdentity -> DEBU 0e6[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.842 UTC [msp] GetLocalMSP -> DEBU 0e7[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.842 UTC [msp] GetDefaultSigningIdentity -> DEBU 0e8[0m Obtaining default signing identity
+[36m2017-12-17 11:01:53.842 UTC [msp/identity] Sign -> DEBU 0e9[0m Sign: plaintext: 0AC8060A1A08021A0608A19DD9D10522...E359457704D612080A021A0012021A00 
+[36m2017-12-17 11:01:53.842 UTC [msp/identity] Sign -> DEBU 0ea[0m Sign: digest: E5B990345FAB14A056366522530835CFE346ED88EFE48E73BD30E85AEB18C380 
+[36m2017-12-17 11:01:53.843 UTC [channelCmd] readBlock -> DEBU 0eb[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:53.843 UTC [msp] GetLocalMSP -> DEBU 0ec[0m Returning existing local MSP
+[36m2017-12-17 11:01:53.843 UTC [msp] GetDefaultSigningIdentity -> DEBU 0ed[0m Obtaining default signing identity
+2017-12-17 11:01:53.844 UTC [channelCmd] InitCmdFactory -> INFO 0ee[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:54.044 UTC [msp] GetLocalMSP -> DEBU 0ef[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.044 UTC [msp] GetDefaultSigningIdentity -> DEBU 0f0[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.045 UTC [msp] GetLocalMSP -> DEBU 0f1[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.045 UTC [msp] GetDefaultSigningIdentity -> DEBU 0f2[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.045 UTC [msp/identity] Sign -> DEBU 0f3[0m Sign: plaintext: 0AC8060A1A08021A0608A29DD9D10522...424B2B883F9212080A021A0012021A00 
+[36m2017-12-17 11:01:54.045 UTC [msp/identity] Sign -> DEBU 0f4[0m Sign: digest: 3311CCEC212FAD5FC50A91F77F392501E198FADEEA5F87E1B7DAE1E1FC33A75B 
+[36m2017-12-17 11:01:54.045 UTC [channelCmd] readBlock -> DEBU 0f5[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:54.045 UTC [msp] GetLocalMSP -> DEBU 0f6[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.045 UTC [msp] GetDefaultSigningIdentity -> DEBU 0f7[0m Obtaining default signing identity
+2017-12-17 11:01:54.046 UTC [channelCmd] InitCmdFactory -> INFO 0f8[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:54.247 UTC [msp] GetLocalMSP -> DEBU 0f9[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.247 UTC [msp] GetDefaultSigningIdentity -> DEBU 0fa[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.247 UTC [msp] GetLocalMSP -> DEBU 0fb[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.247 UTC [msp] GetDefaultSigningIdentity -> DEBU 0fc[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.247 UTC [msp/identity] Sign -> DEBU 0fd[0m Sign: plaintext: 0AC8060A1A08021A0608A29DD9D10522...FB1FFC75BA0012080A021A0012021A00 
+[36m2017-12-17 11:01:54.247 UTC [msp/identity] Sign -> DEBU 0fe[0m Sign: digest: 3A790CE5860A47FBCB5CE321341994E15D494A2D9C37848CCCF86F5D8FFF6C87 
+[36m2017-12-17 11:01:54.249 UTC [channelCmd] readBlock -> DEBU 0ff[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:54.249 UTC [msp] GetLocalMSP -> DEBU 100[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.249 UTC [msp] GetDefaultSigningIdentity -> DEBU 101[0m Obtaining default signing identity
+2017-12-17 11:01:54.250 UTC [channelCmd] InitCmdFactory -> INFO 102[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:54.450 UTC [msp] GetLocalMSP -> DEBU 103[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.450 UTC [msp] GetDefaultSigningIdentity -> DEBU 104[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.450 UTC [msp] GetLocalMSP -> DEBU 105[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.450 UTC [msp] GetDefaultSigningIdentity -> DEBU 106[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.450 UTC [msp/identity] Sign -> DEBU 107[0m Sign: plaintext: 0AC8060A1A08021A0608A29DD9D10522...3EF1E52B945B12080A021A0012021A00 
+[36m2017-12-17 11:01:54.450 UTC [msp/identity] Sign -> DEBU 108[0m Sign: digest: 69B6E6B8F87655520C82671378EC4E8966A34CACA188243A281FE9F0210CFBD3 
+[36m2017-12-17 11:01:54.451 UTC [channelCmd] readBlock -> DEBU 109[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:54.451 UTC [msp] GetLocalMSP -> DEBU 10a[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.451 UTC [msp] GetDefaultSigningIdentity -> DEBU 10b[0m Obtaining default signing identity
+2017-12-17 11:01:54.452 UTC [channelCmd] InitCmdFactory -> INFO 10c[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:54.653 UTC [msp] GetLocalMSP -> DEBU 10d[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.653 UTC [msp] GetDefaultSigningIdentity -> DEBU 10e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.653 UTC [msp] GetLocalMSP -> DEBU 10f[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.653 UTC [msp] GetDefaultSigningIdentity -> DEBU 110[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.653 UTC [msp/identity] Sign -> DEBU 111[0m Sign: plaintext: 0AC8060A1A08021A0608A29DD9D10522...1EF600DC8FFF12080A021A0012021A00 
+[36m2017-12-17 11:01:54.653 UTC [msp/identity] Sign -> DEBU 112[0m Sign: digest: BACA77B91F8077EB09E73324924B5357A4BE7666306B19F7A66B733DED5CDEFA 
+[36m2017-12-17 11:01:54.653 UTC [channelCmd] readBlock -> DEBU 113[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:54.653 UTC [msp] GetLocalMSP -> DEBU 114[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.653 UTC [msp] GetDefaultSigningIdentity -> DEBU 115[0m Obtaining default signing identity
+2017-12-17 11:01:54.655 UTC [channelCmd] InitCmdFactory -> INFO 116[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:54.855 UTC [msp] GetLocalMSP -> DEBU 117[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.855 UTC [msp] GetDefaultSigningIdentity -> DEBU 118[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.855 UTC [msp] GetLocalMSP -> DEBU 119[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.855 UTC [msp] GetDefaultSigningIdentity -> DEBU 11a[0m Obtaining default signing identity
+[36m2017-12-17 11:01:54.855 UTC [msp/identity] Sign -> DEBU 11b[0m Sign: plaintext: 0AC8060A1A08021A0608A29DD9D10522...64FCA7AA03D712080A021A0012021A00 
+[36m2017-12-17 11:01:54.855 UTC [msp/identity] Sign -> DEBU 11c[0m Sign: digest: 5311CF493704D9F0C383996510091E2FF7DF8D7B8DFB7C3BF21CE360B4EAA57D 
+[36m2017-12-17 11:01:54.856 UTC [channelCmd] readBlock -> DEBU 11d[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:54.856 UTC [msp] GetLocalMSP -> DEBU 11e[0m Returning existing local MSP
+[36m2017-12-17 11:01:54.856 UTC [msp] GetDefaultSigningIdentity -> DEBU 11f[0m Obtaining default signing identity
+2017-12-17 11:01:54.857 UTC [channelCmd] InitCmdFactory -> INFO 120[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:55.058 UTC [msp] GetLocalMSP -> DEBU 121[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.058 UTC [msp] GetDefaultSigningIdentity -> DEBU 122[0m Obtaining default signing identity
+[36m2017-12-17 11:01:55.058 UTC [msp] GetLocalMSP -> DEBU 123[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.058 UTC [msp] GetDefaultSigningIdentity -> DEBU 124[0m Obtaining default signing identity
+[36m2017-12-17 11:01:55.058 UTC [msp/identity] Sign -> DEBU 125[0m Sign: plaintext: 0AC8060A1A08021A0608A39DD9D10522...C94EA39DC98512080A021A0012021A00 
+[36m2017-12-17 11:01:55.058 UTC [msp/identity] Sign -> DEBU 126[0m Sign: digest: F6B359EA2E146D6A93CEB358A0632FF64A5F9FB4B53F5509B8BD23E7C29A4591 
+[36m2017-12-17 11:01:55.059 UTC [channelCmd] readBlock -> DEBU 127[0m Got status:*orderer.DeliverResponse_Status 
+[36m2017-12-17 11:01:55.059 UTC [msp] GetLocalMSP -> DEBU 128[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.059 UTC [msp] GetDefaultSigningIdentity -> DEBU 129[0m Obtaining default signing identity
+2017-12-17 11:01:55.060 UTC [channelCmd] InitCmdFactory -> INFO 12a[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:55.261 UTC [msp] GetLocalMSP -> DEBU 12b[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.261 UTC [msp] GetDefaultSigningIdentity -> DEBU 12c[0m Obtaining default signing identity
+[36m2017-12-17 11:01:55.261 UTC [msp] GetLocalMSP -> DEBU 12d[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.261 UTC [msp] GetDefaultSigningIdentity -> DEBU 12e[0m Obtaining default signing identity
+[36m2017-12-17 11:01:55.261 UTC [msp/identity] Sign -> DEBU 12f[0m Sign: plaintext: 0AC8060A1A08021A0608A39DD9D10522...6E78087955B912080A021A0012021A00 
+[36m2017-12-17 11:01:55.261 UTC [msp/identity] Sign -> DEBU 130[0m Sign: digest: E291FD539DA95A1BE914CA7D5DAA7A92DFA000DB5354234461E9C9422665F7D3 
+[36m2017-12-17 11:01:55.263 UTC [channelCmd] readBlock -> DEBU 131[0m Received block:0 
+2017-12-17 11:01:55.263 UTC [main] main -> INFO 132[0m Exiting.....
+===================== Channel "KaiserClsStlmt" is created successfully ===================== 
+
+Having all peers join the channel...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:01:55.309 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:01:55.309 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:01:55.309 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:01:55.330 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:01:55.330 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:01:55.332 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:55.332 UTC [msp/identity] Sign -> DEBU 007[0m Sign: plaintext: 0A8A070A5C08011A0C08A39DD9D10510...835181393DCE1A080A000A000A000A00 
+[36m2017-12-17 11:01:55.332 UTC [msp/identity] Sign -> DEBU 008[0m Sign: digest: 08D198BAE2668BE1067B40B248F38BAE77862AA4E1E010790CD4BBEB756E4543 
+2017-12-17 11:01:55.566 UTC [channelCmd] executeJoin -> INFO 009[0m Peer joined the channel!
+2017-12-17 11:01:55.566 UTC [main] main -> INFO 00a[0m Exiting.....
+===================== PEER0 joined on the channel "KaiserClsStlmt" ===================== 
+
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer1.org1.example.com:7051
+2017-12-17 11:01:57.607 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:01:57.607 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:01:57.607 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:01:57.627 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:01:57.627 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:01:57.629 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:57.629 UTC [msp/identity] Sign -> DEBU 007[0m Sign: plaintext: 0A8A070A5C08011A0C08A59DD9D10510...835181393DCE1A080A000A000A000A00 
+[36m2017-12-17 11:01:57.629 UTC [msp/identity] Sign -> DEBU 008[0m Sign: digest: 07B79D887D9EBDD8F59F71454799B340EF511464F3E3877AE3C09563DAE9F20F 
+2017-12-17 11:01:57.903 UTC [channelCmd] executeJoin -> INFO 009[0m Peer joined the channel!
+2017-12-17 11:01:57.903 UTC [main] main -> INFO 00a[0m Exiting.....
+===================== PEER1 joined on the channel "KaiserClsStlmt" ===================== 
+
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org2MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+2017-12-17 11:01:59.959 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:01:59.959 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/crls: no such file or directory]
+2017-12-17 11:01:59.959 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:01:59.979 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:01:59.979 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:01:59.980 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:01:59.981 UTC [msp/identity] Sign -> DEBU 007[0m Sign: plaintext: 0A8A070A5C08011A0C08A79DD9D10510...835181393DCE1A080A000A000A000A00 
+[36m2017-12-17 11:01:59.981 UTC [msp/identity] Sign -> DEBU 008[0m Sign: digest: 1DA26806022DB1898242C04A76C79BC93B89DBD4937667D77BE16A0DF70E2941 
+2017-12-17 11:02:00.218 UTC [channelCmd] executeJoin -> INFO 009[0m Peer joined the channel!
+2017-12-17 11:02:00.218 UTC [main] main -> INFO 00a[0m Exiting.....
+===================== PEER2 joined on the channel "KaiserClsStlmt" ===================== 
+
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org2MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer1.org2.example.com:7051
+2017-12-17 11:02:02.259 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:02.260 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:02.260 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:02.280 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:02.280 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:02:02.281 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:02:02.282 UTC [msp/identity] Sign -> DEBU 007[0m Sign: plaintext: 0A8A070A5C08011A0C08AA9DD9D10510...835181393DCE1A080A000A000A000A00 
+[36m2017-12-17 11:02:02.282 UTC [msp/identity] Sign -> DEBU 008[0m Sign: digest: 39DE4C97F08C7C4E824A31AC6839116981929AB7DB3396B33B21DC191A145F6C 
+2017-12-17 11:02:02.498 UTC [channelCmd] executeJoin -> INFO 009[0m Peer joined the channel!
+2017-12-17 11:02:02.498 UTC [main] main -> INFO 00a[0m Exiting.....
+===================== PEER3 joined on the channel "KaiserClsStlmt" ===================== 
+
+Updating anchor peers for org1...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:02:04.538 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:04.539 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:04.539 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:04.560 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.560 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:02:04.562 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:02:04.562 UTC [msp] GetLocalMSP -> DEBU 007[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.562 UTC [msp] GetDefaultSigningIdentity -> DEBU 008[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.562 UTC [msp] GetLocalMSP -> DEBU 009[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.562 UTC [msp] GetDefaultSigningIdentity -> DEBU 00a[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.563 UTC [msp/identity] Sign -> DEBU 00b[0m Sign: plaintext: 0A8C060A074F7267314D53501280062D...2A0641646D696E732A0641646D696E73 
+[36m2017-12-17 11:02:04.563 UTC [msp/identity] Sign -> DEBU 00c[0m Sign: digest: 8E7B64ACC7A1652DC77A974AFC32F055F4A9290640140A821FD69B2D4E5A9246 
+[36m2017-12-17 11:02:04.563 UTC [msp] GetLocalMSP -> DEBU 00d[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.563 UTC [msp] GetDefaultSigningIdentity -> DEBU 00e[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.563 UTC [msp] GetLocalMSP -> DEBU 00f[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.563 UTC [msp] GetDefaultSigningIdentity -> DEBU 010[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.563 UTC [msp/identity] Sign -> DEBU 011[0m Sign: plaintext: 0AC8060A1A08021A0608AC9DD9D10522...C9EF60BF8DD2F644C3AB93A476FCED0B 
+[36m2017-12-17 11:02:04.563 UTC [msp/identity] Sign -> DEBU 012[0m Sign: digest: AE1761FB526A8DAE399D2D1BD3ACF90CC053C6D377A2AFE530EE3AEAFD24EF95 
+[36m2017-12-17 11:02:04.583 UTC [msp] GetLocalMSP -> DEBU 013[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.583 UTC [msp] GetDefaultSigningIdentity -> DEBU 014[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.583 UTC [msp] GetLocalMSP -> DEBU 015[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.583 UTC [msp] GetDefaultSigningIdentity -> DEBU 016[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.583 UTC [msp/identity] Sign -> DEBU 017[0m Sign: plaintext: 0AC8060A1A08021A0608AC9DD9D10522...954B63B56A8912080A021A0012021A00 
+[36m2017-12-17 11:02:04.583 UTC [msp/identity] Sign -> DEBU 018[0m Sign: digest: B64C084E4F16C2B045BA49DF26BA749B41E4517C0CB1729F6AED0066B646826D 
+[36m2017-12-17 11:02:04.586 UTC [channelCmd] readBlock -> DEBU 019[0m Received block:0 
+2017-12-17 11:02:04.586 UTC [main] main -> INFO 01a[0m Exiting.....
+===================== Anchor peers for org "Org1MSP" on "KaiserClsStlmt" is updated successfully ===================== 
+
+Updating anchor peers for org2...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org2MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+2017-12-17 11:02:04.645 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:04.645 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:04.645 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:04.675 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.675 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:02:04.676 UTC [channelCmd] InitCmdFactory -> INFO 006[0m Endorser and orderer connections initialized
+[36m2017-12-17 11:02:04.677 UTC [msp] GetLocalMSP -> DEBU 007[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.677 UTC [msp] GetDefaultSigningIdentity -> DEBU 008[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.677 UTC [msp] GetLocalMSP -> DEBU 009[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.677 UTC [msp] GetDefaultSigningIdentity -> DEBU 00a[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.677 UTC [msp/identity] Sign -> DEBU 00b[0m Sign: plaintext: 0A8C060A074F7267324D53501280062D...2A0641646D696E732A0641646D696E73 
+[36m2017-12-17 11:02:04.677 UTC [msp/identity] Sign -> DEBU 00c[0m Sign: digest: B60008C8052F56C0A4F7B4517CBBE4B01D8EB70C3A09F7F687451C42F30E4A6A 
+[36m2017-12-17 11:02:04.677 UTC [msp] GetLocalMSP -> DEBU 00d[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.677 UTC [msp] GetDefaultSigningIdentity -> DEBU 00e[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.677 UTC [msp] GetLocalMSP -> DEBU 00f[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.677 UTC [msp] GetDefaultSigningIdentity -> DEBU 010[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.677 UTC [msp/identity] Sign -> DEBU 011[0m Sign: plaintext: 0AC8060A1A08021A0608AC9DD9D10522...D703C5C2D197405A6E2E73993CE2528F 
+[36m2017-12-17 11:02:04.677 UTC [msp/identity] Sign -> DEBU 012[0m Sign: digest: 830A1593CFAB46EF0240335A682116B2FEA7DAB6CAA234540F63A09D681EDC58 
+[36m2017-12-17 11:02:04.702 UTC [msp] GetLocalMSP -> DEBU 013[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.702 UTC [msp] GetDefaultSigningIdentity -> DEBU 014[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.702 UTC [msp] GetLocalMSP -> DEBU 015[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.702 UTC [msp] GetDefaultSigningIdentity -> DEBU 016[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.702 UTC [msp/identity] Sign -> DEBU 017[0m Sign: plaintext: 0AC8060A1A08021A0608AC9DD9D10522...CDB1EEAE0F6C12080A021A0012021A00 
+[36m2017-12-17 11:02:04.702 UTC [msp/identity] Sign -> DEBU 018[0m Sign: digest: 838DF07360E22931EDF99A7A5D654877AD710AEEDADD74C0860DD9ADF0D23F81 
+[36m2017-12-17 11:02:04.705 UTC [channelCmd] readBlock -> DEBU 019[0m Received block:0 
+2017-12-17 11:02:04.705 UTC [main] main -> INFO 01a[0m Exiting.....
+===================== Anchor peers for org "Org2MSP" on "KaiserClsStlmt" is updated successfully ===================== 
+
+Installing chaincode on org1/peer0...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:02:04.745 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:04.745 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:04.745 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:04.797 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.797 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.797 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/claim
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package bytes
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package encoding/json
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 009[0m Discarding GOROOT package fmt
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package strconv
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2017-12-17 11:02:04.893 UTC [golang-platform] func1 -> DEBU 00e[0m Discarding GOROOT package 
+[36m2017-12-17 11:02:04.894 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m done
+[36m2017-12-17 11:02:04.897 UTC [msp/identity] Sign -> DEBU 010[0m Sign: plaintext: 0A8A070A5C08031A0C08AC9DD9D10510...CD9EFF0B0000FFFF29677C6900760000 
+[36m2017-12-17 11:02:04.897 UTC [msp/identity] Sign -> DEBU 011[0m Sign: digest: E7A1E14A6788AC7D587A5151E998110FF0B69CB17766C889798368C743239B1F 
+[36m2017-12-17 11:02:04.903 UTC [chaincodeCmd] install -> DEBU 012[0m Installed remotely response:<status:200 payload:"OK" > 
+2017-12-17 11:02:04.903 UTC [main] main -> INFO 013[0m Exiting.....
+===================== Chaincode is installed on remote peer PEER0 ===================== 
+
+Install chaincode on org2/peer2...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org2MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+2017-12-17 11:02:04.952 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:04.952 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:04.952 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:04.976 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:04.976 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+[36m2017-12-17 11:02:04.976 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/claim
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package bytes
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package encoding/json
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 009[0m Discarding GOROOT package fmt
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package strconv
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] func1 -> DEBU 00e[0m Discarding GOROOT package 
+[36m2017-12-17 11:02:05.068 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m done
+[36m2017-12-17 11:02:05.072 UTC [msp/identity] Sign -> DEBU 010[0m Sign: plaintext: 0A89070A5B08031A0B08AD9DD9D10510...CD9EFF0B0000FFFF29677C6900760000 
+[36m2017-12-17 11:02:05.072 UTC [msp/identity] Sign -> DEBU 011[0m Sign: digest: 2A71A93AB353AE802CF292E603E6CC69BF8DD0B013A46F786AA07300553925E7 
+[36m2017-12-17 11:02:05.076 UTC [chaincodeCmd] install -> DEBU 012[0m Installed remotely response:<status:200 payload:"OK" > 
+2017-12-17 11:02:05.076 UTC [main] main -> INFO 013[0m Exiting.....
+===================== Chaincode is installed on remote peer PEER2 ===================== 
+
+Instantiating chaincode on org2/peer2...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:02:05.114 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:05.114 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:05.114 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:05.137 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:05.137 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+2017-12-17 11:02:05.139 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 006[0m Using default escc
+2017-12-17 11:02:05.139 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 007[0m Using default vscc
+[36m2017-12-17 11:02:05.139 UTC [msp/identity] Sign -> DEBU 008[0m Sign: plaintext: 0A99070A6B08031A0B08AD9DD9D10510...324D53500A04657363630A0476736363 
+[36m2017-12-17 11:02:05.139 UTC [msp/identity] Sign -> DEBU 009[0m Sign: digest: 9DB0A95EB6AFDDAB06E05CD6583C39951DA95F7475FDA668FC7B1C184E10BADF 
+[36m2017-12-17 11:02:26.724 UTC [msp/identity] Sign -> DEBU 00a[0m Sign: plaintext: 0A99070A6B08031A0B08AD9DD9D10510...F88358840442B545DF99990751BA645E 
+[36m2017-12-17 11:02:26.725 UTC [msp/identity] Sign -> DEBU 00b[0m Sign: digest: FB72F46FEDFB0F49C5A63BA560C03C4AEF1F732F6A2F387E7DA0A9A1D70AA490 
+2017-12-17 11:02:26.733 UTC [main] main -> INFO 00c[0m Exiting.....
+===================== Chaincode Instantiation on PEER0 on channel 'KaiserClsStlmt' is successful ===================== 
+
+Sending invoke transaction on org1/peer0...
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.key
+CORE_PEER_LOCALMSPID=Org1MSP
+CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/server.crt
+CORE_PEER_TLS_ENABLED=false
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+CORE_PEER_ID=cli
+CORE_LOGGING_LEVEL=DEBUG
+CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+2017-12-17 11:02:26.776 UTC [msp] getMspConfig -> INFO 001[0m intermediate certs folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts: no such file or directory]
+2017-12-17 11:02:26.776 UTC [msp] getMspConfig -> INFO 002[0m crls folder not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/intermediatecerts]. Skipping.: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/crls: no such file or directory]
+2017-12-17 11:02:26.777 UTC [msp] getMspConfig -> INFO 003[0m MSP configuration file not found at [/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml]: [stat /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/config.yaml: no such file or directory]
+[36m2017-12-17 11:02:26.799 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2017-12-17 11:02:26.799 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+[36m2017-12-17 11:02:26.801 UTC [msp/identity] Sign -> DEBU 006[0m Sign: plaintext: 0A9F070A7108031A0C08C29DD9D10510...033530300A033230300A01310A024F6B 
+[36m2017-12-17 11:02:26.801 UTC [msp/identity] Sign -> DEBU 007[0m Sign: digest: 8372172152F5C15A4FF565CB5BFB564730BDF8612807F30CD0061F2D4164408B 
+Error: Error endorsing invoke: rpc error: code = Unknown desc = could not find chaincode with name 'autoadjcc' - make sure the chaincode autoadjcc has been successfully instantiated and try again - <nil>
+Usage:
+  peer chaincode invoke [flags]
+
+Global Flags:
+      --cafile string              Path to file containing PEM-encoded trusted certificate(s) for the ordering endpoint
+  -C, --chainID string             The chain on which this command should be executed (default "testchainid")
+  -c, --ctor string                Constructor message for the chaincode in JSON format (default "{}")
+  -E, --escc string                The name of the endorsement system chaincode to be used for this chaincode
+  -l, --lang string                Language the chaincode is written in (default "golang")
+      --logging-level string       Default logging level and overrides, see core.yaml for full syntax
+  -n, --name string                Name of the chaincode
+  -o, --orderer string             Ordering service endpoint
+  -p, --path string                Path to chaincode
+  -P, --policy string              The endorsement policy associated to this chaincode
+      --test.coverprofile string   Done (default "coverage.cov")
+  -t, --tid string                 Name of a custom ID generation algorithm (hashing and decoding) e.g. sha256base64
+      --tls                        Use TLS when communicating with the orderer endpoint
+  -u, --username string            Username for chaincode operations when security is enabled
+  -v, --version string             Version of the chaincode specified in install/instantiate/upgrade commands
+  -V, --vscc string                The name of the verification system chaincode to be used for this chaincode
+
+!!!!!!!!!!!!!!! Invoke execution on PEER0 failed  !!!!!!!!!!!!!!!!
+================== ERROR !!! FAILED to execute End-2-End Scenario ==================
+

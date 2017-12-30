@@ -1,0 +1,402 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+networks:
+  PPNetwork:
+
+services:
+
+
+  orderer.kaiser.com:
+    extends:
+      file:   base/docker-compose-base.yaml
+      service: orderer.kaiser.com
+    container_name: orderer.kaiser.com
+    networks:
+      - PPNetwork
+
+  couchdb0:
+    container_name: couchdb0
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "5984:5984"
+    networks:
+      - PPNetwork
+
+  peer0.KProvider.kaiser.com:
+    container_name: peer0.KProvider.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb0:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer0.KProvider.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb0
+
+  couchdb1:
+    container_name: couchdb1
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "6984:5984"
+    networks:
+      - PPNetwork
+
+  peer1.KProvider.kaiser.com:
+    container_name: peer1.KProvider.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb1:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer1.KProvider.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb1
+
+  couchdb2:
+    container_name: couchdb2
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "7984:5984"
+    networks:
+      - PPNetwork
+
+  peer2.KProvider.kaiser.com:
+    container_name: peer2.KProvider.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb2:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer2.KProvider.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb2
+
+  couchdb3:
+    container_name: couchdb3
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "8984:5984"
+    networks:
+      - PPNetwork
+
+  peer3.KProvider.kaiser.com:
+    container_name: peer3.KProvider.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb3:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer3.KProvider.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb3
+
+  couchdb4:
+    container_name: couchdb4
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "9984:5984"
+    networks:
+      - PPNetwork
+
+  peer4.KPayer.kaiser.com:
+    container_name: peer4.KPayer.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb4:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer4.KPayer.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb4
+
+  couchdb5:
+    container_name: couchdb5
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "10984:5984"
+    networks:
+      - PPNetwork
+
+  peer5.KPayer.kaiser.com:
+    container_name: peer5.KPayer.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb5:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer5.KPayer.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb5
+
+  couchdb6:
+    container_name: couchdb6
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "11984:5984"
+    networks:
+      - PPNetwork
+
+  peer6.KPayer.kaiser.com:
+    container_name: peer6.KPayer.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb6:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer6.KPayer.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb6
+
+  couchdb7:
+    container_name: couchdb7
+    image: hyperledger/fabric-couchdb
+    # Populate the COUCHDB_USER and COUCHDB_PASSWORD to set an admin user and password
+    # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
+    environment:
+      - COUCHDB_USER=
+      - COUCHDB_PASSWORD=
+    # Comment/Uncomment the port mapping if you want to hide/expose the CouchDB service,
+    # for example map it to utilize Fauxton User Interface in dev environments.
+    ports:
+      - "12984:5984"
+    networks:
+      - PPNetwork
+
+  peer7.KPayer.kaiser.com:
+    container_name: peer7.KPayer.kaiser.com
+    environment:
+      - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb7:5984
+      # The CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME and CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+      # provide the credentials for ledger to connect to CouchDB.  The username and password must
+      # match the username and password set for the associated CouchDB.
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME=
+      - CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD=
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer7.KPayer.kaiser.com
+    networks:
+      - PPNetwork
+    depends_on:
+      - couchdb7
+
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools
+    tty: true
+    environment:
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_LOGGING_LEVEL=DEBUG
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.KProvider.kaiser.com:7051
+      - CORE_PEER_LOCALMSPID=KProviderMSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/KProvider.kaiser.com/peers/peer0.KProvider.kaiser.com/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/KProvider.kaiser.com/peers/peer0.KProvider.kaiser.com/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/KProvider.kaiser.com/peers/peer0.KProvider.kaiser.com/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/KProvider.kaiser.com/users/Admin@KProvider.kaiser.com/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+   # command: /bin/bash -c './scripts/script.sh ${CHANNEL_NAME} ${DELAY}; sleep $TIMEOUT'
+    volumes:
+        - /var/run/:/host/var/run/
+        - ./../chaincode/:/opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go
+        - ./crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+        - ./scripts:/opt/gopath/src/github.com/hyperledger/fabric/peer/scripts/
+        - ./channel-artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
+    depends_on:
+      - orderer.kaiser.com
+      - peer0.KProvider.kaiser.com
+      - peer1.KProvider.kaiser.com
+      - peer2.KProvider.kaiser.com
+      - peer3.KProvider.kaiser.com
+      - peer4.KPayer.kaiser.com
+      - peer5.KPayer.kaiser.com
+      - peer6.KPayer.kaiser.com
+      - peer7.KPayer.kaiser.com
+    networks:
+      - PPNetwork
+
+# ZooKeeper services, at least 3 nodes
+  zookeeper0:
+    extends:
+      file: base/kafka-base.yaml
+      service: zookeeper-base
+    container_name: zookeeper0
+    hostname: zookeeper0
+    environment:
+      - ZOO_MY_ID=1
+      - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888 server.3=zookeeper2:2888:3888
+
+  zookeeper1:
+    extends:
+      file: base/kafka-base.yaml
+      service: zookeeper-base
+    container_name: zookeeper1
+    hostname: zookeeper1
+    environment:
+      - ZOO_MY_ID=2
+      - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888 server.3=zookeeper2:2888:3888
+
+  zookeeper2:
+    extends:
+      file: base/kafka-base.yaml
+      service: zookeeper-base
+    container_name: zookeeper2
+    hostname: zookeeper2
+    environment:
+      - ZOO_MY_ID=3
+      - ZOO_SERVERS=server.1=zookeeper0:2888:3888 server.2=zookeeper1:2888:3888 server.3=zookeeper2:2888:3888
+
+# Kafka services, at least 4 node to tolerant work with 1 node failure
+  kafka0:
+    extends:
+      file: base/kafka-base.yaml
+      service: kafka-base
+    container_name: kafka0
+    hostname: kafka0
+    environment:
+      - KAFKA_BROKER_ID=0
+      - KAFKA_MIN_INSYNC_REPLICAS=2
+      - KAFKA_DEFAULT_REPLICATION_FACTOR=3
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper0:2181,zookeeper1:2181,zookeeper2:2181
+
+  kafka1:
+    extends:
+      file: base/kafka-base.yaml
+      service: kafka-base
+    container_name: kafka1
+    hostname: kafka1
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_DEFAULT_REPLICATION_FACTOR=3
+      - KAFKA_MIN_INSYNC_REPLICAS=2
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper0:2181,zookeeper1:2181,zookeeper2:2181
+
+  kafka2:
+    extends:
+      file: base/kafka-base.yaml
+      service: kafka-base
+    container_name: kafka2
+    hostname: kafka2
+    environment:
+      - KAFKA_BROKER_ID=2
+      - KAFKA_DEFAULT_REPLICATION_FACTOR=3
+      - KAFKA_MIN_INSYNC_REPLICAS=2
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper0:2181,zookeeper1:2181,zookeeper2:2181
+
+  kafka3:
+    extends:
+      file: base/kafka-base.yaml
+      service: kafka-base
+    container_name: kafka3
+    hostname: kafka3
+    environment:
+      - KAFKA_BROKER_ID=3
+      - KAFKA_DEFAULT_REPLICATION_FACTOR=3
+      - KAFKA_MIN_INSYNC_REPLICAS=2
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper0:2181,zookeeper1:2181,zookeeper2:2181
+
